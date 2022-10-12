@@ -1,6 +1,6 @@
 # Exercism_Python
 
-In this repository you will find several problemas and solutiones from my Python track in Exercism (https://exercism.org)
+In this repository you will find several problemas and solutions from my Python track in Exercism (https://exercism.org)
 
 My public profile: https://exercism.org/profiles/karpo27
 
