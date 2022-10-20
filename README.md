@@ -1,4 +1,4 @@
-# Exercism_Python
+# Exercism Python
 
 In this repository you will find several problemas and solutions from my Python track in Exercism (https://exercism.org)
 
