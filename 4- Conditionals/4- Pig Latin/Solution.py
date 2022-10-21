@@ -1,10 +1,9 @@
 def translate(text):
     text_1 = text.split()
-    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    specials = ['x', 'y', 'X', 'Y']
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    specials = ['x', 'y']
     cons = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'ñ', 'p', 'q', 'r', 's',
-            't', 'v', 'w', 'z', 'B', 'C', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M',
-            'N', 'Ñ', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Z'
+            't', 'v', 'w', 'z'
             ]
     
     counter_i = 0
@@ -35,11 +34,11 @@ def translate(text):
 
                 elif text_1[counter_i][1] in cons:
                     if text_1[counter_i][2] in cons:
-                        if text_1[counter_i][2] != "y" or "Y":
+                        if text_1[counter_i][2] != "y":
                             temp = cons[counter_k] + text_1[counter_i][1] + text_1[counter_i][2]
                             text_1[counter_i] = text_1[counter_i].removeprefix(temp) + temp + "ay"
 
-                        elif text_1[counter_i][2] == "y" or "Y":
+                        else:
                             temp = cons[counter_k] + text_1[counter_i][1]
                             text_1[counter_i] = text_1[counter_i].removeprefix(temp) + temp + "ay"
 
