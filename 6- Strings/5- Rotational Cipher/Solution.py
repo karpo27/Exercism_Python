@@ -15,8 +15,8 @@ def rotate(text, key):
                     new_text = new_text + letters[j + key]
 
     last_text = ""
-    for i in range(0, len(text)):
-        for j in range(0, len(new_text)):
+    for i in range(len(text)):
+        for j in range(len(new_text)):
             if i == j:
                 if text[i].isupper() == True:
                     last_text = last_text + new_text[j].upper()
