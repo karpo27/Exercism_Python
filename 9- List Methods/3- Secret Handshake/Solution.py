@@ -1,7 +1,7 @@
 def commands(binary_str):
 
     handshake = []
-    for i in range(0, len(binary_str)):
+    for i in range(len(binary_str)):
         if binary_str[1] == "1":
             handshake.append("jump")
         if binary_str[2] == "1":
