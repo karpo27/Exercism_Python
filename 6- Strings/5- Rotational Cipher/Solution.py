@@ -7,7 +7,7 @@ def rotate(text, key):
     for i in text:
         if i in specials or i.isdigit() == True:
             new_text = new_text + i
-        for j in range(0, len(letters)):
+        for j in range(len(letters)):
             if i == letters[j] or i == letters[j].upper():
                 if j + key >= 26:
                     new_text = new_text + letters[key - (len(letters) - j)]
