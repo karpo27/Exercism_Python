@@ -15,6 +15,6 @@ Ciphertext is written out in groups of fixed length, the traditional group size 
 
 # Examples
 - Encoding test gives gvhg
-- Encoding x123 yes gives c123 bvh
+- Encoding x123 yes gives c123b vh
 - Decoding gvhg gives test
 - Decoding gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt gives thequickbrownfoxjumpsoverthelazydog
