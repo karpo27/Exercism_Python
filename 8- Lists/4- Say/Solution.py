@@ -1,4 +1,5 @@
 def say(number):
+    
     dictionary_1 = {
         "0": "zero",
         "1": "one",
@@ -31,15 +32,18 @@ def say(number):
         "80": "eighty",
         "90": "ninety"
     }
+    
     str_number = str(number)
     if number < 0:
         raise ValueError("input out of range")
     elif number > 999999999999:
         raise ValueError("input out of range")
+        
     step_1 = ""
     th = " thousand " + str_number[-3:]
     mi = " million " + str_number[-6:-3] + th
     bi = " billion " + str_number[-9:-6] + mi
+    
     if 1 <= len(str_number) <= 3:
         step_1 = str_number
     elif 4 <= len(str_number) < 7:
@@ -48,8 +52,10 @@ def say(number):
         step_1 = str_number[-len(str_number):-6] + mi
     elif 10 <= len(str_number) < 13:
         step_1 = str_number[-len(str_number):-9] + bi
+        
     step_1 = step_1.split()
     step_2 = []
+    
     for z in range(len(step_1)):
         if step_1[z].isdigit() == True:
             if len(step_1[z]) == 3:
@@ -73,6 +79,7 @@ def say(number):
                 pass
             else:
                 step_2.append(step_1[z])
+                
     step_3 = []
     for k in range(len(step_2)):
         if step_2[k].isdigit() == True:
@@ -88,6 +95,7 @@ def say(number):
                                 step_3.append(f'{j}-{y}')
         else:
             step_3.append(step_2[k])
+            
     result = " ".join(step_3)
     return result
     
