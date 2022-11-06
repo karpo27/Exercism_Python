@@ -11,7 +11,6 @@ def say(number):
         "8": "eight",
         "9": "nine"
     }
-
     dictionary_2 = {
         "10": "ten",
         "11": "eleven",
@@ -32,15 +31,11 @@ def say(number):
         "80": "eighty",
         "90": "ninety"
     }
-
     str_number = str(number)
-
     if number < 0:
         raise ValueError("input out of range")
-
     elif number > 999999999999:
         raise ValueError("input out of range")
-
     step_1 = ""
     th = " thousand " + str_number[-3:]
     mi = " million " + str_number[-6:-3] + th
@@ -53,7 +48,6 @@ def say(number):
         step_1 = str_number[-len(str_number):-6] + mi
     elif 10 <= len(str_number) < 13:
         step_1 = str_number[-len(str_number):-9] + bi
-
     step_1 = step_1.split()
     step_2 = []
     for z in range(len(step_1)):
@@ -79,24 +73,21 @@ def say(number):
                 pass
             else:
                 step_2.append(step_1[z])
-
     step_3 = []
     for k in range(len(step_2)):
         if step_2[k].isdigit() == True:
-            if 1 <= len(step_2[k]) <= 2:
-                if step_2[k] in dictionary_1:
-                    step_3.append(dictionary_1[step_2[k]])
-                elif step_2[k] in dictionary_2:
-                    step_3.append(dictionary_2[step_2[k]])
-                else:
-                    for i, j in dictionary_2.items():
-                        if str(i)[0] == step_2[k][0]:
-                            for x, y in dictionary_1.items():
-                                if str(x)[0] == step_2[k][1]:
-                                    step_3.append(f'{j}-{y}')
+            if step_2[k] in dictionary_1:
+                step_3.append(dictionary_1[step_2[k]])
+            elif step_2[k] in dictionary_2:
+                step_3.append(dictionary_2[step_2[k]])
+            else:
+                for i, j in dictionary_2.items():
+                    if str(i)[0] == step_2[k][0]:
+                        for x, y in dictionary_1.items():
+                            if str(x)[0] == step_2[k][1]:
+                                step_3.append(f'{j}-{y}')
         else:
             step_3.append(step_2[k])
-
     result = " ".join(step_3)
     return result
     
