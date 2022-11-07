@@ -36,5 +36,5 @@ def recite(start_verse, end_verse):
         else:
             new_verse.append(f'This is {verse_1[i]} that {verse_2[i - 1]} {new_verse[i - 1].removeprefix("This is ")}')
 
-    return new_verse[start_verse -1:end_verse]
+    return new_verse[start_verse-1:end_verse]
     
