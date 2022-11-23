@@ -52,3 +52,5 @@ E·······E
 ···B·B···
 
 ····A····
+
+(Consider points as spaces)
