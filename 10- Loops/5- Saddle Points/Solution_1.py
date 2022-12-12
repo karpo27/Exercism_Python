@@ -1,4 +1,4 @@
- import numpy as np
+import numpy as np
 
 
 def saddle_points(matrix):
@@ -6,6 +6,7 @@ def saddle_points(matrix):
     if arr.shape[0] != arr.shape[1]:
         raise ValueError("irregular matrix")
 
+    print(arr)
     dict_rc = {}
     for i in range(len(arr)):
         for j in range(len(arr[i])):
@@ -22,5 +23,9 @@ def saddle_points(matrix):
                             if c == arr.shape[1] * 2:
                                 dict_rc.update({(i + 1, j + 1): arr.shape[1]})
 
-    return dict_rc
-    
+    new_list = []
+    for i in dict_rc.keys():
+        new_list.append({"row": i[0], "column": i[1]})
+
+    return new_list
+   
