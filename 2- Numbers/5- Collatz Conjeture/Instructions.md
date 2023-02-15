@@ -5,7 +5,7 @@ Take any positive integer n. If n is even, divide n by 2 to get n / 2. If n is o
 
 Given a number n, return the number of steps required to reach 1.
 
-# Examples
+## Examples
 Starting with n = 12, the steps would be as follows:
 
 12
@@ -30,7 +30,7 @@ Starting with n = 12, the steps would be as follows:
 
 Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
-# Exception messages
+## Exception messages
 Sometimes it is necessary to raise an exception. When you do this, you should always include a meaningful error message to indicate what the source of the error is. This makes your code more readable and helps significantly with debugging. For situations where you know that the error source will be a certain type, you can choose to raise one of the built in error types, but should still include a meaningful message.
 
 The Collatz Conjecture is only concerned with strictly positive integers, so this exercise expects you to use the raise statement and "throw" a ValueError in your solution if the given value is zero or a negative integer. The tests will only pass if you both raise the exception and include a message with it.
