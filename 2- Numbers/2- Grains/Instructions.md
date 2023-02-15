@@ -10,14 +10,14 @@ Write code that shows:
 
 how many grains were on a given square, and the total number of grains on the chessboard
 
-# For bonus points
+## For bonus points
 Did you get the tests passing and the code clean? If you want to, these are some additional things you could try:
 
 Optimize for speed.
 Optimize for readability.
 Then please share your thoughts in a comment on the submission. Did this experiment make the code better? Worse? Did you learn anything from it?
 
-# Exception messages
+## Exception messages
 Sometimes it is necessary to raise an exception. When you do this, you should always include a meaningful error message to indicate what the source of the error is. This makes your code more readable and helps significantly with debugging. For situations where you know that the error source will be a certain type, you can choose to raise one of the built in error types, but should still include a meaningful message.
 
 This particular exercise requires that you use the raise statement to "throw" a ValueError when the square input is out of range. The tests will only pass if you both raise the exception and include a message with it.
