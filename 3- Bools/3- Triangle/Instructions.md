@@ -7,7 +7,7 @@ An isosceles triangle has at least two sides the same length. (It is sometimes s
 
 A scalene triangle has all sides of different lengths.
 
-# Note
+## Note
 For a shape to be a triangle at all, all sides have to be of length > 0, and the sum of the lengths of any two sides must be greater than or equal to the length of the third side.
 
 In equations:
@@ -22,5 +22,5 @@ a + c ≥ b
 
 See Triangle Inequality: https://en.wikipedia.org/wiki/Triangle_inequality
 
-# Dig Deeper
+## Dig Deeper
 The case where the sum of the lengths of two sides equals that of the third is known as a degenerate triangle - it has zero area and looks like a single line. Feel free to add your own code/tests to check for degenerate triangles.
