@@ -11,7 +11,7 @@ on every year that is evenly divisible by 4
     
 For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
 
-# Notes
+## Notes
 Though our exercise adopts some very simple rules, there is more to learn!
 
 For a delightful, four minute explanation of the whole leap year phenomenon, go watch this youtube video:
