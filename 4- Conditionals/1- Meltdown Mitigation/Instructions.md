@@ -5,7 +5,7 @@ For a reactor to produce the power it must be in a state of criticality. If the 
 
 The following three tasks are all related to writing code for maintaining ideal reactor state.
 
-# 1. Check for criticality
+## 1. Check for criticality
 The first thing a control system has to do is check if the reactor is balanced in criticality. A reactor is said to be critical if it satisfies the following conditions:
 
 The temperature is less than 800 K.
@@ -19,7 +19,7 @@ Implement the function is_criticality_balanced() that takes temperature measured
 is_criticality_balanced(750, 600)
 
 True
-# 2. Determine the Power output range
+## 2. Determine the Power output range
 Once the reactor has started producing power its efficiency needs to be determined. Efficiency can be grouped into 4 bands:
 
 1) green -> efficiency of 80% or more,
@@ -40,7 +40,7 @@ This function should return the efficiency band of the reactor : 'green', 'orang
 reactor_efficiency(200,50,15000)
   
 'orange'
-# 3. Fail Safe Mechanism
+## 3. Fail Safe Mechanism
 Your final task involves creating a fail-safe mechanism to avoid overload and meltdown. This mechanism will determine if the reactor is below, at, or above the ideal criticality threshold. Criticality can then be increased, decreased, or stopped by inserting (or removing) control rods into the reactor.
 
 Implement the function called fail_safe(), which takes 3 parameters: temperature measured in kelvin, neutrons_produced_per_second, and threshold, and outputs a status code for the reactor.
