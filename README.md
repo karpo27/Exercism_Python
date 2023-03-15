@@ -2,6 +2,8 @@
 
 # Exercism Python
 
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-%20DEVELOPMENT-green)
+
 In this repository you will find several problemas and solutions from my Python track in Exercism (https://exercism.org)
 
 My public profile: https://exercism.org/profiles/karpo27
