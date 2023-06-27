@@ -1,11 +1,8 @@
-def value_of_card(card, A_value=None):
+def value_of_card(card, A_value=1):
     if card in ['K', 'Q', 'J']:
         return 10
     elif card == 'A':
-        if not A_value:
-            return 1
-        else:
-            return A_value
+        return A_value
     else:
         return int(card)
     
