@@ -35,7 +35,6 @@ class Robot:
             }
         }
         for command in commands:
-            print(self.direction, self.coordinates)
             if command in ['R', 'L']:
                 self.direction = directions[self.direction][command]
             else:
