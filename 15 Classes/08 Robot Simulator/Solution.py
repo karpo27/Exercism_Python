@@ -13,29 +13,14 @@ class Robot:
 
     def move(self, commands):
         directions = {
-            NORTH: {
-                'R': EAST,
-                'L': WEST,
-                'A': [0, 1]
-            },
-            SOUTH: {
-                'R': WEST,
-                'L': EAST,
-                'A': [0, -1]
-            },
-            EAST: {
-                'R': SOUTH,
-                'L': NORTH,
-                'A': [1, 0]
-            },
-            WEST: {
-                'R': NORTH,
-                'L': SOUTH,
-                'A': [-1, 0]
-            }
+            NORTH: {'R': EAST, 'L': WEST, 'A': (0, 1)},
+            SOUTH: {'R': WEST, 'L': EAST, 'A': (0, -1)},
+            EAST: {'R': SOUTH, 'L': NORTH, 'A': (1, 0)},
+            WEST: {'R': NORTH, 'L': SOUTH, 'A': (-1, 0)}
         }
         for command in commands:
+            print(self.direction, self.coordinates)
             if command in ['R', 'L']:
                 self.direction = directions[self.direction][command]
             else:
-                self.coordinates = self.coordinates[0] + directions[self.direction][command][0], self.coordinates[1] + directions[self.direction][command][1]
+                self.coordinates = tuple(a + b for a, b in zip(self.coordinates, directions[self.direction][command]))
